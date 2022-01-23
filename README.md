@@ -16,8 +16,10 @@ To understanding 'SHA-256' by developing my own faster sha-256 algorithm.
 |"|3|8.085|||
 |"|4|8.113|||
 |"|5|8.226|||
+
 *Elapsed Time and AVG shorter is better, Enhanced % = 100 * (1 - (8.466 / 27.444))*
 
+---------------------------------------
 
 ### Code for performance test
 _Is there something wrong what I missed?_
@@ -37,6 +39,7 @@ public class SHA256_Sample {
         beforeTime = System.currentTimeMillis();
         for (int i = 0; i < 1000000; i++) {
             m.getHashFromString(String.valueOf(ch));
+            
             ch++;
         }
         afterTime = System.currentTimeMillis();
