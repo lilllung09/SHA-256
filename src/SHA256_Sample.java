@@ -8,7 +8,7 @@ public class SHA256_Sample {
         // Test with string
         System.out.println(m.getHashFromString(new String("Hello World!")));
 
-        // Test with Text File
+        // Test with File
         System.out.println(m.getHashFromFile("sample.pdf"));
     }
 }
